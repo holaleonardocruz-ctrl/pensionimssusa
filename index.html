@@ -213,6 +213,14 @@ section{padding:64px 0}
 .creds svg{width:22px;height:22px;flex:none;color:var(--gold);margin-top:4px}
 .person{margin-top:20px;padding:20px;border-radius:var(--radius);background:var(--card);border:1px solid var(--line)}
 .person p{margin:0;color:var(--muted)}
+.advisors{margin-top:24px}
+.advisors-title{font-size:1.3rem;margin-bottom:.4em}
+.advisors-lead{color:var(--muted)}
+.person-head{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.person-head h3{margin:0}
+.avatar{width:52px;height:52px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--navy);color:var(--gold-3);font-family:var(--font-title);font-weight:800;font-size:1.05rem}
+.role{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brown)}
+.advisors-note{margin-top:16px;font-size:.95rem;color:var(--muted)}
 @media (min-width:900px){.team{grid-template-columns:1.1fr 1fr}}
 
 .us-company{margin-top:16px}
@@ -463,9 +471,32 @@ section{padding:64px 0}
         <li><svg aria-hidden="true"><use href="#i-scale"/></svg><span>Litigio de seguridad social ante los Tribunales Laborales Federales.</span></li>
         <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Oficina: Calle Yeseros de Echeveste #102, Local 1, Col. Hacienda Echeveste, C.P. 37100, León, Guanajuato. <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Yeseros+de+Echeveste+102+Hacienda+Echeveste+37100+Le%C3%B3n+Guanajuato" target="_blank" rel="noopener">Ver en Google Maps</a></span></li>
       </ul>
-      <div class="person">
-        <h3>Francisco Zúñiga te atiende</h3>
-        <p>Experto en pensiones para mexicanos en el extranjero. Es quien recibe tu mensaje por WhatsApp y quien te llama con el resultado de tu precalificación.</p>
+      <!-- Equipo que atiende por WhatsApp -->
+      <div class="advisors">
+        <span class="tag">Quién te atiende</span>
+        <h3 class="advisors-title">Personas reales, con nombre y apellido</h3>
+        <p class="advisors-lead">Desde tu primer mensaje hasta el resultado de tu precalificación, te acompaña el mismo equipo. Sin robots, sin call center: te contestan personas que conocen tu caso.</p>
+        <div class="person">
+          <div class="person-head">
+            <span class="avatar" aria-hidden="true">FZ</span>
+            <div>
+              <h3>Francisco Zúñiga</h3>
+              <span class="role">Asesor Certificado</span>
+            </div>
+          </div>
+          <p>Experto en pensiones para mexicanos en el extranjero. Es quien recibe tu mensaje por WhatsApp, revisa contigo tus datos y te llama personalmente con el resultado de tu precalificación. Te explica tu caso con palabras claras, sin tecnicismos.</p>
+        </div>
+        <div class="person">
+          <div class="person-head">
+            <span class="avatar" aria-hidden="true">EG</span>
+            <div>
+              <h3>Estefanía González</h3>
+              <span class="role">Asesora Junior</span>
+            </div>
+          </div>
+          <p>Trabaja junto con Francisco para que tu caso avance sin pendientes: te ayuda con tu CURP y tus documentos, resuelve tus dudas por WhatsApp y te mantiene al tanto en cada paso.</p>
+        </div>
+        <p class="advisors-note">Detrás de ellos está el Lic. Leonardo Daniel Cruz Gallegos, abogado titular, que supervisa cada caso.</p>
       </div>
     </div>
   </div>
